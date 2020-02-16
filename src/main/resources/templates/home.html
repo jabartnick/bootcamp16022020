@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+</head>
+<body>
+<h1>Strona główna - Witaj <span th:text="${firstName}"></span></h1>
+<ul>
+    <div>
+        <li><a th:href="@{/kurs/lista}">Lista kursów</a></li>
+    </div>
+    <div>
+    <li><a href="/student/lista">Lista studentów</a></li>
+    </div>
+    <div>
+    <li><a href="/rejestracja">Rejestracja</a></li>
+    </div>
+</ul>
+</body>
+</html>
